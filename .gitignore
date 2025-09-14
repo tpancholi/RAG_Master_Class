@@ -14,7 +14,7 @@ wheels/
 .DS_Store
 
 # Data
-.data/
+data/
 
 # Environment
 .env
