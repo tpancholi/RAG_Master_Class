@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+
+# IDE
+.idea/
+.DS_Store
+
+# Environment
+.env
