@@ -13,5 +13,8 @@ wheels/
 .idea/
 .DS_Store
 
+# Data
+.data/
+
 # Environment
 .env
