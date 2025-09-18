@@ -6,8 +6,15 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "faiss-cpu>=1.12.0",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.29",
+    "langchain-core>=0.3.76",
+    "langchain-docling>=1.1.0",
+    "langchain-text-splitters>=0.3.11",
+    "llama-index>=0.14.2",
     "notebook>=7.4.5",
     "numpy>=2.3.3",
+    "pymupdf>=1.26.4",
     "python-dotenv>=1.1.1",
 ]
 
