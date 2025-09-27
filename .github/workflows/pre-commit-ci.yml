@@ -37,9 +37,11 @@ jobs:
       - name: Run Safety (uv.lock)
         run: |
           if [ -f uv.lock ]; then
-            safety check --file=uv.lock --full-report || true
+            # write JSON output; tolerate non-zero exit so job doesn't fail
+            safety check --file=uv.lock --full-report --json > safety-report.json || true
           else
-            echo "uv.lock not found; skipping safety."
+            # ensure a file exists so upload-artifact has something to upload
+            echo '{"notice":"uv.lock not found; skipping safety."}' > safety-report.json
           fi
 
       - name: Upload Bandit report
