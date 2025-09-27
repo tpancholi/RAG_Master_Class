@@ -31,3 +31,8 @@ uv run ruff check . --show-files
 ```
 uv run ruff check . --fix --show-fixes --show-files
 ```
+
+# strip jupyter notebook output
+```
+uv run jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
+```
