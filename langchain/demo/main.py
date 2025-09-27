@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 def main():
-	print("Hello from rag-master-class!")
+	print("Hello, LangChain!")
 
 
 if __name__ == "__main__":
